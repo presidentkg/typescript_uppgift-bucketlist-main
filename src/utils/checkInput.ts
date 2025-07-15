@@ -15,3 +15,14 @@ export function checkInputLength(input: string, errorMessage: HTMLParagraphEleme
     else
         return true
 }
+
+export function createErrorMessage(changeName: HTMLDivElement): HTMLParagraphElement{
+    const usernameErrorMessage = document.createElement('p') as HTMLParagraphElement
+    usernameErrorMessage.classList.add('error-message')
+    usernameErrorMessage.setAttribute('role', 'alert')
+    usernameErrorMessage.style.display = 'none'
+    usernameErrorMessage.style.color = "black"
+    usernameErrorMessage.innerHTML = 'Användarnamnet kan inte vara tomt'
+    changeName.appendChild(usernameErrorMessage)
+    return usernameErrorMessage
+}

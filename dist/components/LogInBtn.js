@@ -19,4 +19,4 @@ export function addEventListenerToLogInButton() {
         window.location.href = 'Dashboard.html';
     });
 }
-//# sourceMappingURL=LogInButton.js.map
+//# sourceMappingURL=LogInBtn.js.map

@@ -3,7 +3,6 @@ export function addEventListenerToPasswordToggleButtonButton(): void {
     const passwordInput = document.getElementById('password') as HTMLInputElement
 
     passwordToggleBtn.addEventListener('click', (event) => {
-        console.log('Password toggle button clicked')
         const type = passwordInput.getAttribute('type') === 'password' ? 'text' : 'password'
         passwordInput.setAttribute('type', type)
     })
